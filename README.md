@@ -8,10 +8,14 @@ To run the application locally, create a local copy of this work, change directo
 
 To get the application running locally, change directory until you reach the root of this applcation and then ‘npm run start’ or ‘npm start’
 
-To get the application running locally with test coverage, change directory until you reach the root of this applcation and then ‘npm run test’ or ‘npm test’ 
+To get the application running locally with test coverage, change directory until you reach the root of this applcation and then ‘npm run test’ or ‘npm test’
 
 To get this application built for production, change directory until you reach the root of this applcation and then ‘npm run build’
 
 This application was built using React v16.6.3, Bootstrap v4.1.3 and tests built using Jest v23.6.0 and Enzyme v3.8.0.
 
+
 Continuous delivery flow diagram can be found here. (https://github.com/JasonZook/myRetail/blob/master/ConFlowDiagram.pdf)
+
+
+Tested using Chrome v71.0.3578.98 and FireFox v64
