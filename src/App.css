@@ -1,0 +1,134 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.myRetail-logo-text {
+  font-family: 'Allura', cursive, Arial;
+}
+
+a.myRetail-logo-text:hover, a.md-gray-text:hover {
+  text-decoration: none;
+  color: #555;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+.font-four {
+  font-size: 4em;
+}
+.font-two {
+  font-size: 2em;
+}
+
+.font-one {
+  font-size: 1em;
+}
+
+.font-one-five {
+  font-size: 1.5em;
+}
+.font-point-nine {
+  font-size: .9em;
+}
+.font-point-six {
+  font-size: .6em;
+}
+.line-one {
+  line-height: 1;
+}
+.myretail-green-bg{
+  background-color: #b9dcc3;
+}
+.myretail-dk-green-text {
+  color: #3f7d4f;
+}
+.myretail-dk-green-text > li > a{
+  color: #3f7d4f;
+}
+.myretail-dk-green-text > li > a:hover{
+  color: #3a6a46;
+  text-decoration: none;
+}
+.white-text {
+  color: #fff;
+}
+
+.drk-gray-text {
+  color: #1E1E1E;
+}
+
+.md-gray-text {
+  color: #2c322e;
+}
+
+.border-bottom-gray {
+  border-bottom: 1px solid #2c322e;
+}
+
+.star-gold {
+  color: #e5d01c;
+}
+
+.small-card {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: .25em;
+}
+
+.quantity-button {
+  text-decoration: none;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 50%;
+}
+
+.gallery-row {
+  height: 80px;
+}
+
+.gallery-row img {
+  height: 70px;
+  widht: auto;
+}
+
+.no-button {
+  border: none;
+  background-color: inherit;
+}
+
+.pull-center {
+  margin: 0 auto;
+}
+
+.btn-bg-sm {
+    width: auto%;
+}
+
+.thumb-image {
+  border: 1px solid #3a6a46;
+}
+
+.thumb-box {
+  display: inline-block;
+}
+@media (max-width: 767px) {
+  .btn-bg-sm {
+      width: 100%;
+      margin-bottom: 5pt;
+  }
+}
