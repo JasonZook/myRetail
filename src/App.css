@@ -103,7 +103,7 @@ a.myRetail-logo-text:hover, a.md-gray-text:hover {
 
 .gallery-row img {
   height: 70px;
-  widht: auto;
+  width: auto;
 }
 
 .no-button {
@@ -126,9 +126,34 @@ a.myRetail-logo-text:hover, a.md-gray-text:hover {
 .thumb-box {
   display: inline-block;
 }
-@media (max-width: 767px) {
+.fixed-top-fix {
+  margin-top: 6rem;
+}
+@media (max-width: 980px) {
+  .gallery-row img {
+    height: 40px;
+    width: auto;
+  }
+  .gallery-row {
+    height: auto;
+  }
   .btn-bg-sm {
       width: 100%;
       margin-bottom: 5pt;
+  }
+}
+@media (max-width: 767px) {
+  .padding-both-fifteen {
+    padding: 0 15px;
+  }
+  .gallery-row img {
+    height: 50px;
+    width: auto;
+  }
+}
+@media (max-width: 767px) {
+  .gallery-row img {
+    height: 30px;
+    width: auto;
   }
 }

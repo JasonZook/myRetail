@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import "react-alice-carousel/lib/alice-carousel.css";
-import AliceCarousel from 'react-alice-carousel';
 import ProductDescription from './ProductDescription';
 import itemData from '../data/item-data'
 
@@ -31,7 +30,7 @@ class Gallery extends Component {
                       {itemAlternativeImages.map((postImage, index) => {
                           let imagePlace = postImage.image
                           return (
-                            <div className="p-1" key={index}><img src={imagePlace} className="pull-center" /></div>
+                            <div className="p-1" key={index}><img src={imagePlace} alt="Product Title" className="pull-center" /></div>
                           )
                         })
                       }
@@ -57,7 +56,7 @@ class Gallery extends Component {
                           {itemAlternativeImages.map((postImage, index) => {
                               let imagePlace = postImage.image
                               return (
-                                <span className="p-1" key={index} onClick={() => this.slideTo(index)}><img src={imagePlace} className="thumb-image" /></span>
+                                <span className="p-1" key={index} onClick={() => this.slideTo(index)}><img src={imagePlace} alt="Product Thumbnails" className="thumb-image img-fluid" /></span>
                               )
                             })
                           }

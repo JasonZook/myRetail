@@ -7,7 +7,7 @@ export default class ProductDescription extends Component {
     let itemInfo = itemData.CatalogEntryView
     return (
       <div className="row">
-        <div className="font-point-nine">
+        <div className="col font-point-nine">
           {itemInfo.map((postDetail, index) => {
             return (<p>
                 {postDetail.shortDescription}

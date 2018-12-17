@@ -35,7 +35,7 @@ export default class Logo extends Component {
           onMouseEnter={this._onMouseEnter}
           onMouseLeave={this._onMouseLeave}
         >
-          myRetail <span className="sr-only">(current)</span>
+          myRetail
         </a>
       );
     }

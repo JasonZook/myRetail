@@ -16,19 +16,19 @@ class App extends Component {
     return (
       <div>
         <TopNav />
-        <div className="container mt-4">
+        <div className="container fixed-top-fix">
           <div className="row">
-            <div className="col-md-8 order-md-1">
+            <div className="col-md-8 order-md-1 px-2">
               <Product />
               <Gallery />
             </div>
-            <div className="col-md-4 order-md-1 mb-4">
+            <div className="col-md-4 order-md-1 mb-4 px-2">
               <ItemPriceInfo/>
               <AddToCart />
               <Social />
               <ProductHighlights />
             </div>
-            <div className="col-md-8 order-md-2">
+            <div className="col-md-8 order-md-2 px-2">
               <hr className="mb-4" />
               <CustomerReviews />
             </div>

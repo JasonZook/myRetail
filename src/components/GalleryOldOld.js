@@ -44,6 +44,32 @@ class Gallery extends Component {
           })}
         </div>;
 
+        images = () =>
+        <div>
+            {itemData.CatalogEntryView.map((postDetail, index) => {
+              let itemImage = postDetail.Images
+              return (
+                <div>
+                  {itemImage.map((postItemImage, index) => {
+                    let itemAlternativeImages = postItemImage.AlternateImages
+                    return (
+                      <div>
+                        {itemAlternativeImages.map((postImage, index) => {
+                            let imagePlace = postImage.image
+                            return (
+                              {imagePlace}
+                            )
+                          })
+                        }
+                      </div>
+                      )
+                    })
+                  }
+                </div>
+              )
+            })}
+          </div>;
+
       renderGallery() {
         const { currentIndex} = this.state;
 
@@ -54,30 +80,8 @@ class Gallery extends Component {
             buttonsDisabled={true}
             slideToIndex={currentIndex}
             onSlideChange={this.onSlideChange}
-            onSlideChanged={this.onSlideChanged}>
-
-            {itemData.CatalogEntryView.map((postDetail, i) => {
-              let itemImage = postDetail.Images
-              return (
-                <div key={i}> {itemImage.map((postItemImage, index) => {
-                    let itemAlternativeImages = postItemImage.AlternateImages
-                    return (
-                      <h2>
-                        {itemAlternativeImages.map((postImage, i) => {
-                            let imagePlace = postImage.image
-                            return (
-                              <img src={imagePlace} />
-                            )
-                          })
-                        }
-                      </h2>
-                      )
-                    })
-                  }
-                </div>
-              )
-            })}
-            </AliceCarousel>
+            onSlideChanged={this.onSlideChanged}
+            images={images}/>
           );
         }
 

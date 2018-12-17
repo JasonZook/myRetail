@@ -9,7 +9,7 @@ export default class CustomerReviews extends Component {
         <div className="mb-3">
           <h2 className="font-one-five">Customer Reviews</h2>
         </div>
-        <div className="row">
+        <div className="row padding-both-fifteen">
           <div className="card">
             <div className="card-header">
               <ul className="nav nav-tabs card-header-tabs">
