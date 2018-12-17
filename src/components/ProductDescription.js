@@ -9,7 +9,7 @@ export default class ProductDescription extends Component {
       <div className="row">
         <div className="col font-point-nine">
           {itemInfo.map((postDetail, index) => {
-            return (<p>
+            return (<p key={index}>
                 {postDetail.shortDescription}
               </p>);
           })}

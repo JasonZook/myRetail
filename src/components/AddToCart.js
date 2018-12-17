@@ -12,7 +12,7 @@ class AddToCart extends Component {
           const letsPickUp = (postDetail.purchasingChannelCode === '0' || postDetail.purchasingChannelCode === '2');
           const letsCartThis = (postDetail.purchasingChannelCode === '0' || postDetail.purchasingChannelCode === '1');
           return (
-            <div className="row mb-3">
+            <div key={index} className="row mb-3">
               <div className="col-xs-12 col-lg-6">
               {letsPickUp &&
                 <button type="button" className="btn btn-secondary btn-bg-sm">

@@ -11,16 +11,16 @@ class ItemPriceInfo extends Component {
         {itemInfo.map((postDetail, index) => {
           let itemImageOffers = postDetail.Offers
           return (
-            <div> {
+            <div key={index}> {
               itemImageOffers.map((postItemOfferPrice, index) => {
                 let itemFormatedPrice = postItemOfferPrice.OfferPrice
                 return (
-                  <div>
+                  <div key={index}>
                     {
                       itemFormatedPrice.map((postItemFormatedPrice, index) => {
                         let itemValue = postItemFormatedPrice.formattedPriceValue
                         return (
-                          <span className="text-success font-two text-bold">{itemValue}</span>
+                          <span key={index} className="text-success font-two text-bold">{itemValue}</span>
                         )
                       })
                     }

@@ -22,11 +22,11 @@ class Gallery extends Component {
           {itemData.CatalogEntryView.map((postDetail, index) => {
             let itemImage = postDetail.Images
             return (
-              <div>
+              <div key={index}>
                 {itemImage.map((postItemImage, index) => {
                   let itemAlternativeImages = postItemImage.PrimaryImage
                   return (
-                    <div>
+                    <div key={index}>
                       {itemAlternativeImages.map((postImage, index) => {
                           let imagePlace = postImage.image
                           return (
@@ -48,11 +48,11 @@ class Gallery extends Component {
               {itemData.CatalogEntryView.map((postDetail, index) => {
                 let itemImage = postDetail.Images
                 return (
-                  <div>
+                  <div key={index}>
                     {itemImage.map((postItemImage, index) => {
                       let itemAlternativeImages = postItemImage.AlternateImages
                       return (
-                        <div>
+                        <div key={index}>
                           {itemAlternativeImages.map((postImage, index) => {
                               let imagePlace = postImage.image
                               return (
