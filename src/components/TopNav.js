@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import Logo from './Logo'
+import Logo from './Logo';
+import collapse from 'bootstrap'
 
 class TopNav extends Component {
 
@@ -7,28 +8,26 @@ class TopNav extends Component {
 
     return (
       <nav className="navbar navbar-expand-lg myretail-green-bg shadow-sm border-bottom-gray fixed-top">
-        <div className="container line-one">
-
+        <div className="container line-one mx-sm-0">
           <Logo page={"http://www.fakeurl.zz"} />
-
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsHeader" aria-controls="navbarsHeader" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"><span className="icon-bar"></span>
-           <span className="icon-bar"></span>
-           <span className="icon-bar"></span></span>
-
+            <span className="navbar-toggler-icon">
+            <span className="icon-bar"></span>
+            <span className="icon-bar"></span>
+            <span className="icon-bar"></span></span>
           </button>
-          <nav className="collapse navbar-collapse ml-5" id="navbarsHeader" role="navigation">
+          <nav className="collapse navbar-collapse ml-5 mt-md-2" id="navbarsHeader" role="navigation">
             <ul className="navbar-nav mr-auto">
-              <li className="nav-item mx-4">
+              <li className="nav-item mx-4 mx-sm-1 my-sm-2">
                 <a className="md-gray-text text-bold font-point-nine" href="http://www.fakeurl.zz/home-goods">Home Goods</a>
               </li>
-              <li className="nav-item mx-4">
+              <li className="nav-item mx-4 mx-sm-1 my-sm-2">
                 <a className="md-gray-text text-bold font-point-nine" href="http://www.fakeurl.zz/apparel">Apparel</a>
               </li>
-              <li className="nav-item mx-4">
+              <li className="nav-item mx-4 mx-sm-1 my-sm-2">
                 <a className="md-gray-text text-bold font-point-nine" href="http://www.fakeurl.zz/kids">Kids</a>
               </li>
-              <li className="nav-item mx-4">
+              <li className="nav-item mx-4 mx-sm-1 my-sm-2">
                 <a className="md-gray-text text-bold font-point-nine" href="http://www.fakeurl.zz/organics">Organics</a>
               </li>
             </ul>
