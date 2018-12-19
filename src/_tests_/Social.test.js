@@ -7,9 +7,9 @@ import Social from '../components/Social';
 describe('A suite', function() {
   it('should render without throwing an error', function() {
     expect(shallow(<Social />).contains( <div className="text-center mb-5">
-      <a href="#"><i className="fab fa-pinterest mx-3 font-two md-gray-text"> <span className="sr-only">Pinterest</span></i></a>
-      <a href="#"><i className="fab fa-facebook mx-3 font-two md-gray-text"> <span className="sr-only">Facebook</span></i></a>
-      <a href="#"><i className="fab fa-instagram mx-3 font-two md-gray-text"> <span className="sr-only">Instagram</span></i></a>
+    <a href="http://www.pintrest.com"><i className="fab fa-pinterest mx-3 font-two md-gray-text"> <span className="sr-only">Pinterest</span></i></a>
+    <a href="http://www.facebook.com"><i className="fab fa-facebook mx-3 font-two md-gray-text"> <span className="sr-only">Facebook</span></i></a>
+    <a href="http://www.instagram.com"><i className="fab fa-instagram mx-3 font-two md-gray-text"> <span className="sr-only">Instagram</span></i></a>
     </div>)).toBe(true);
   });
 
